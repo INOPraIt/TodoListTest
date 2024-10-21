@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0;
+}
+
+.containerForm {
+  background-color: #ffffff;
+}
+
+.inputAddTodo {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  height: 60px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #ffffff; 
+  box-sizing: border-box;
+  padding-left: 10px;
+  // padding-left: 10px;
+}
+
+.inputAddTodo::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.inputAddTodo:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.lineForm {
+  border: 0;
+  height: 1px;
+  background-color: #eaeaea;
+}
+
+.containerTodo {
+  display: flex;
+  height: 60px;
+  align-items: center;
+
+  .blockTodo {
+    display: flex;
+
+    .customCheckbox {
+      width: 20px;
+      margin-left: 10px;
+    }
+
+    .textTodo {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  
+  }
+}
+
+.lineTodo {
+  border: none;
+  background-color: #ccc;
+  height: 1px;
+}
